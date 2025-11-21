@@ -35,15 +35,25 @@ elif x == "Треугольник":
 else: 
    #Украдено у kievsky332
     print("Неверный ввод")
-  #Задание 5
-gg = int(input("Введите кол-во програмистов."))
-for i in range(0,gg):
-  bb = i+1
-  if bb ==1:
-    print(bb," програмист")
-  elif b>1 and b <5:
-    print(bb," програмиста")
-  else:
-    print(bb," програмистов")
- 
-  
+#5
+s = int(input)
+# Получаем последнюю цифру числа
+for i in range(0,a):
+    num_str = i
+    last_digit = i % 10
+    last_two_digits = i % 100
+    if 11 <= last_two_digits <= 14:
+        print( f"{num_str} програмистов")
+    elif last_digit == 1:
+        print(f"{num_str} програмист")
+    elif 2 <= last_digit <= 4:
+        print( f"{num_str} програмиста")
+    else:
+        print(f"{num_str} програмистов")
+#6
+acc = input()
+
+if acc[0]+acc[1]+acc[2] == acc[-1]+acc[-2]+acc[-3]:
+    print(True)
+else:
+    print(False)
